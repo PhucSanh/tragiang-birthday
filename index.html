@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gửi Trà Giang – Sinh nhật & Lời xin lỗi 💖</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: 'Quicksand', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            overflow-x: hidden;
+            padding: 12px;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        }
+
+        body.show-bg {
+            background: url('bg.jpg') center no-repeat fixed;
+        }
+
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(8px);
+            opacity: 0;
+            transition: opacity 1.2s ease;
+            z-index: -1;
+        }
+
+        body.show-bg::before {
+            opacity: 1;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            border-radius: 22px;
+            padding: 28px;
+            width: 100%;
+            max-width: 540px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+            animation: fadeIn 1.5s ease;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 2.3rem;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font-size: 1.15rem;
+            font-weight: 400;
+            margin-bottom: 18px;
+            color: #fff;
+        }
+
+        .divider {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.4);
+            margin: 22px 0;
+        }
+
+        p {
+            line-height: 1.7;
+            margin: 12px 0;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: #ffeaa7;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 26px;
+            border: none;
+            border-radius: 30px;
+            background: #ff7675;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        #apology,
+        #birthday {
+            display: none;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 20px;
+            animation: floatUp 4s linear infinite;
+            opacity: 0.85;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.92);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes floatUp {
+            from {
+                transform: translateY(100vh) scale(1);
+                opacity: 1;
+            }
+
+            to {
+                transform: translateY(-10vh) scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.9rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 0.95rem;
+            }
+
+            button {
+                width: 100%;
+                font-size: 0.95rem;
+            }
+
+            .card {
+                padding: 22px;
+                border-radius: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Gửi Trà Giang 💖</h1>
+        <h2>Một lời xin lỗi & một lời chúc sinh nhật</h2>
+
+        <p>Anh biết hôm nay em có thể đang buồn và thất vọng về anh.</p>
+        <p>Vì vậy, trước tiên… anh muốn <span class="highlight">xin lỗi em</span>.</p>
+
+        <button onclick="showApology()">Nghe anh nói một chút nha…</button>
+
+        <div id="apology">
+            <div class="divider"></div>
+            <p>Anh xin lỗi vì đã <span class="highlight">quên sinh nhật em</span> – ngày quan trọng nhất của em.</p>
+            <p>Anh biết chỉ một chữ <b>"xin lỗi"</b> là không đủ để bù lại cảm giác buồn và thất vọng mà anh đã gây ra.
+            </p>
+            <p>Anh đã để sự vô tâm của mình làm tổn thương người con gái mà anh yêu thương nhất.</p>
+            <p>Anh thật sự hối hận… không phải vì em giận, mà vì anh đã không bảo vệ cảm xúc của em.</p>
+            <p>Từ ngày <span class="highlight">01/07/2024</span>, em bước vào cuộc đời anh và làm mọi thứ trở nên ý
+                nghĩa hơn.</p>
+            <p>Anh trân trọng em, trân trọng từng khoảnh khắc mình có bên nhau, và anh ghét chính mình vì đã quên mất
+                điều đó trong một ngày quan trọng.</p>
+            <p>Anh không mong em tha thứ ngay lúc này.</p>
+            <p>Anh chỉ mong em tin rằng <span class="highlight">anh thật sự nhận ra lỗi của mình</span> và anh muốn sửa
+                sai bằng hành động, không phải lời nói suông.</p>
+            <p>Nếu có thể, cho anh một cơ hội để làm tốt hơn… cho anh cơ hội được ở bên em và bù đắp.</p>
+
+            <button onclick="showBirthday()">Nếu em còn cho anh cơ hội… 🎂</button>
+        </div>
+
+        <div id="birthday">
+            <div class="divider"></div>
+            <h1>Chúc mừng sinh nhật 🎉</h1>
+            <h2>Nguyễn Trị Trà Giang</h2>
+            <p>Hôm nay là <span class="highlight">22/01/2005</span> – ngày em ra đời 💕</p>
+            <p>Anh chúc em luôn vui vẻ, mạnh mẽ, xinh đẹp và được yêu thương thật nhiều.</p>
+            <p>Cảm ơn em vì đã bước vào cuộc sống của anh.</p>
+            <p><span class="highlight">Anh yêu em</span> và anh thật sự muốn bù đắp cho em.</p>
+
+            <div class="divider"></div>
+            <p><b>Em có tha lỗi cho anh không…?</b></p>
+
+            <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:10px;">
+                <button onclick="acceptLove()">Em đồng ý 💖</button>
+                <button id="noBtn" onmouseover="moveNoBtn()" ontouchstart="moveNoBtn()">Không 😠</button>
+            </div>
+
+            <audio id="voice" src="voice.m4a"></audio>
+
+            <p id="afterAccept" style="display:none; margin-top:16px; color:#ffeaa7; font-weight:600;">
+                Cảm ơn em vì đã cho anh cơ hội ❤️<br>
+                Anh hứa sẽ yêu em tốt hơn mỗi ngày.
+                Nghe anh nói nha!
+            </p>
+        </div>
+        <h1>Chúc mừng sinh nhật 🎉</h1>
+        <h2>Nguyễn Trị Trà Giang</h2>
+        <p>Hôm nay là <span class="highlight">22/01/2005</span> – ngày em ra đời 💕</p>
+        <p>Anh chúc em luôn vui vẻ, mạnh mẽ, xinh đẹp và được yêu thương thật nhiều.</p>
+        <p>Cảm ơn em vì đã bước vào cuộc sống của anh.</p>
+        <p><span class="highlight">Anh yêu em</span> và anh muốn bù đắp cho em bằng hành động.</p>
+    </div>
+    </div>
+
+    <script>
+        function showApology() {
+            document.getElementById('apology').style.display = 'block';
+        }
+
+        function showBirthday() {
+            document.getElementById('birthday').style.display = 'block';
+            for (let i = 0; i < 25; i++) createHeart();
+            startFallingHearts();
+        }
+
+        function moveNoBtn() {
+            const btn = document.getElementById('noBtn');
+            const x = Math.random() * 80 - 40;
+            const y = Math.random() * 80 - 40;
+            btn.style.transform = `translate(${x}px, ${y}px)`;
+        }
+
+        function acceptLove() {
+            const audio = document.getElementById('voice');
+            audio.play();
+            document.getElementById('afterAccept').style.display = 'block';
+            document.body.classList.add('show-bg');
+        }
+
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.innerText = '❤️';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = (3 + Math.random() * 2) + 's';
+            document.body.appendChild(heart);
+            setTimeout(() => heart.remove(), 5000);
+        }
+
+        function startFallingHearts() {
+            setInterval(() => {
+                const heart = document.createElement('div');
+                heart.innerText = '❤️';
+                heart.style.position = 'fixed';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.top = '-20px';
+                heart.style.fontSize = (14 + Math.random() * 10) + 'px';
+                heart.style.opacity = 0.8;
+                heart.style.animation = 'fall 6s linear forwards';
+                document.body.appendChild(heart);
+                setTimeout(() => heart.remove(), 6000);
+            }, 400);
+        }
+    </script>
+
+    <style>
+        @keyframes fall {
+            to {
+                transform: translateY(110vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</body>
+
+</html>
