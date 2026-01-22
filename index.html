@@ -208,6 +208,7 @@
             </div>
 
             <audio id="voice" src="voice.m4a"></audio>
+            <audio id="voice1" src="voice1.m4a"></audio>
 
             <p id="afterAccept" style="display:none; margin-top:16px; color:#ffeaa7; font-weight:600;">
                 Cảm ơn em vì đã cho anh cơ hội ❤️<br>
@@ -215,12 +216,7 @@
                 Nghe anh nói nha!
             </p>
         </div>
-        <h1>Chúc mừng sinh nhật 🎉</h1>
-        <h2>Nguyễn Trị Trà Giang</h2>
-        <p>Hôm nay là <span class="highlight">22/01/2005</span> – ngày em ra đời 💕</p>
-        <p>Anh chúc em luôn vui vẻ, mạnh mẽ, xinh đẹp và được yêu thương thật nhiều.</p>
-        <p>Cảm ơn em vì đã bước vào cuộc sống của anh.</p>
-        <p><span class="highlight">Anh yêu em</span> và anh muốn bù đắp cho em bằng hành động.</p>
+
     </div>
     </div>
 
@@ -244,9 +240,13 @@
 
         function acceptLove() {
             const audio = document.getElementById('voice');
-            audio.play();
+            const audio1 = document.getElementById('voice1');
             document.getElementById('afterAccept').style.display = 'block';
             document.body.classList.add('show-bg');
+            audio.play();
+            audio.onended = () => {
+                audio1.play();
+            };
         }
 
         function createHeart() {
